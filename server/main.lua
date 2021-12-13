@@ -85,3 +85,13 @@ QBCore.Functions.CreateCallback('qb-clothing:server:getOutfits', function(source
     end
     cb(anusVal)
 end)
+
+-- Clothing Pack
+
+QBCore.Functions.CreateUseableItem("clothingpack", function(source, item)
+	local src = source
+	local Player = QBCore.Functions.GetPlayer(src)
+	if Player.Functions.GetItemByName(item.name) ~= nil then
+		TriggerClientEvent("clothing:client:UseClothingbackpack", src)
+	end
+end)

@@ -2038,6 +2038,13 @@ AddEventHandler("qb-clothing:client:adjustfacewear",function(type)
 	ClearPedTasks(PlayerPedId())
 end)
 
+-- Clothing Pack
+
+RegisterNetEvent('clothing:client:UseClothingbackpack', function()
+    local ped = PlayerPedId()
+    TriggerEvent('qb-clothing:client:openOutfitMenu')
+end)
+
 ------------------------------refreshskin-------------------
 
 RegisterCommand("refreshskin", function(source, args, rawCommand)
