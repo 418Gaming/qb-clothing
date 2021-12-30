@@ -545,7 +545,7 @@ Config.Outfits = {
             [1] = {
                 outfitLabel = "LSPD Short Sleeve",
                 outfitData = {
-                    ["pants"]       = { item = 24, texture = 0},  -- Pants
+                    ["pants"]       = { item = 25, texture = 1},  -- Pants
                     ["arms"]        = { item = 19, texture = 0},  -- Arms
                     ["t-shirt"]     = { item = 58, texture = 0},  -- T Shirt
                     ["vest"]        = { item = 0, texture = 0},  -- Body Vest
